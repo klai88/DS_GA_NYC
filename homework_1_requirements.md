@@ -21,7 +21,8 @@ Learn more about the data here: http://archive.ics.uci.edu/ml/datasets/Statlog+(
 any significant correlations you find. This will show us you understand the
 data and investigated value.
 
-3) Explain your approach and methodologies, including a brief explanation of both KNN and Beyes Classification.
+3) Explain your approach and methodologies, including a brief explanation of
+KNN, Bayes Classification, and cross validation.
 
 4) Detail your results for each model. Explain the strengths and weaknesses in each model.
 
