@@ -1,5 +1,5 @@
 ## Information about the data set
-df <- read.csv('~/data_science_class_examples/sparrows.csv')
+df <- read.csv('~/data_science_class_examples/lesson_example_code/sparrows.csv')
 
 
 # sparrows.csv contains data about sparrow abundance vs human distrubance
