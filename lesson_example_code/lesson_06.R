@@ -1,12 +1,19 @@
 ## reference -- http://www.ats.ucla.edu/stat/r/dae/logit.htm
+install.packages('aod')
+library(aod)
+library(ggplot2)
 
+## About this data and data set
+# This is data of students attempting to get into graduate school.
+# We know if they were admitted(0, 1), their gre score, gpa, and the rank of their undergraduate school.
+# How do we look at each of these features to predict if a student will get into graduate school
+# or not?
 x <- read.csv("http://www.ats.ucla.edu/stat/data/binary.csv")
 xtabs(~admit + rank, data=x)
 lin.fit <- lm(admit ~ ., data=x)
 lin.fit2 <- lm(admit ~ 0 + ., data=x)
 summary(lin.fit2)
 x$rank <- factor(x$rank)
-logit.fit <- glm(admit ~ ., family='binomial')
 logit.fit <- glm(admit ~ ., family='binomial', data=x)
 summary(logit.fit)
 
@@ -37,7 +44,5 @@ ggplot(new.data2, aes(x=gre, y=pred)) + geom_line(aes(colour=rank), size=1)
 
 # predict probs for new data (varying gpa)
 new.data3 <- with(x, data.frame(gpa=rep(seq(from=0, to=4.0, length.out=100), 4), gre=mean(gre), rank=factor(rep(1:4, each=100))))
+new.data3$pred <- predict(logit.fit, newdata=new.data3, type='response')
 ggplot(new.data3, aes(x=gpa, y=pred)) + geom_line(aes(colour=rank), size=1)
-
-# one thing to keep in mind (no zero/sparse cells)
-xtabs(~admit + rank, data = mydata)
