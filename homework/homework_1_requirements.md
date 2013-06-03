@@ -12,31 +12,31 @@ The data includes the original 20 features, 4 indicator columns, and a classific
 Keep in mind that all data has been scaled.
 Read the columns as follows: (UPDATED!)
 
-1. Status of existing checking account
-2. Duration in month
-3. Installment rate in percentage of disposable income
-4. Purpose
-5. Savings account/bonds
-6. Present employment since
-7. Personal status and sex
-8. Present residence since
-9. Number of people being liable to provide maintenance for
-10.Age in Years
-11.Other installment plans
-12.Number of existing credits at this bank
-13.Property
-14.Telephone
-15.Credit amount
-16.Job
-17.Housing
-18.Credit history
-19.Other debtors / guarantors
-20.foreign worker
-21.Indicator columns
-22.Indicator columns
-23.Indicator columns
-24.Indicator columns
-25.Classification column
+1.  Status of existing checking account
+2.  Duration in month
+3.  Installment rate in percentage of disposable income
+4.  Purpose
+5.  Savings account/bonds
+6.  Present employment since
+7.  Personal status and sex
+8.  Present residence since
+9.  Number of people being liable to provide maintenance for
+10. Age in Years
+11. Other installment plans
+12. Number of existing credits at this bank
+13. Property
+14. Telephone
+15. Credit amount
+16. Job
+17. Housing
+18. Credit history
+19. Other debtors / guarantors
+20. foreign worker
+21. Indicator columns
+22. Indicator columns
+23. Indicator columns
+24. Indicator columns
+25. Classification column
 
 
 # What we're expecting
