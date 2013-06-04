@@ -14,11 +14,9 @@ if else statements in R used parens and brackets to clearly represent blocks of 
 
 if (a == 1) {
   print('bananas!')
-}
-else if (a == 2) {
-  print('no bananas!')
-}
-else {
+} else if (a == 2) {
+  print('oranges!')
+} else {
   print('no bananas or oranges!')
 }
 
@@ -40,6 +38,7 @@ else:
 """
 while loops excute blocks of code while some condition is true.
 in R:
+N <- 20
 i <- 1
 while (i <= N) {
     y <- i*i
