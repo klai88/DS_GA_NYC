@@ -1,4 +1,6 @@
 curl http://downloads.mysql.com/docs/world.sql.zip >> world.zip
+unzip world.zip
+cd world
 mysql -u root
 
 ---
